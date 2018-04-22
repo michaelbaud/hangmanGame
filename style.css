@@ -1,0 +1,193 @@
+/*-------------*\
+	GENERAL
+\*--------------*/
+@font-face {
+ font-family: "Lato-Hairline";
+ src: url("lato/Lato-Hairline.ttf"),
+}
+
+@font-face {
+ font-family: "Lato-Light";
+ src: url("lato/Lato-Light.ttf");
+}
+
+@font-face {
+ font-family: "Lato-Regular";
+ src: url("lato/Lato-Regular.ttf");
+}
+
+@font-face {
+ font-family: "Lato-Bold";
+ src: url("lato/Lato-Bold.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.block {
+	width: 100vw;
+	height: 100vh;
+	background-color: #8961FFFF;
+	display: flex;
+	font-family: "Lato-Light";
+	color: #4F4F4FFF;
+	overflow: hidden;
+  background-color: #a69e9b;
+}
+
+.block .container {
+	width: 95vw;
+	height: 95vh;
+	background-color: #EEE;
+	margin: auto;
+	box-shadow: #343434FF 0px 0px 50px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------*\
+	NEW GAME
+\*--------------*/
+.block .container .newGameBlock {
+	height: 10%;
+	display: flex;
+	font-size: 1.4rem;
+}
+
+.block .container .newGameBlock p {
+	margin: auto;
+	cursor: pointer;
+}
+
+.block .container .newGameBlock p .plus {
+	border: 1px solid #FF55FF;
+	color: #FF55FF;
+	border-radius: 100%;
+	padding: 0px 7px;
+	font-size: 1.2rem;
+}
+
+/*-------------*\
+	MAIN BLOCK
+\*--------------*/
+.block .container #canvas1 {
+	margin: auto;
+	border-radius: 10px;
+	border: 1px solid #858c8c;
+  box-shadow: grey 0px 5px 30px 5px;
+	height: 70%;
+}
+
+
+/*---------------*\
+	CHAMP TEXT
+\*---------------*/
+.block .container .champTextBlock {
+	height: 10%;
+	width: 100%;
+	display: flex;
+}
+
+.block .container .champTextBlock .champTextBox {
+	margin: auto;
+
+}
+
+.block .container .champTextBlock .champTextBox #champText {
+	width: 30px;
+	padding: 10px;
+	border: 1px solid #AFAFAFFF;
+	border-right: #FF55FF;
+	border-radius: 100px 0 0 100px;
+	color: #565656FF;
+	float: left;
+	font-size: 1.5rem;
+
+}
+
+.block .container .champTextBlock .champTextBox #submit {
+	padding: 10px;
+	border: 1px solid #AFAFAFFF;
+	border-radius: 0 100px 100px 0;
+	background-color: #FF55FF;
+	border: 1px solid #FF55FF;
+	float: left;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+/*-------------*\
+	WORD BLOCK
+\*--------------*/
+
+.block .container .wordBlock {
+	height: 10%;
+	letter-spacing: 1.2rem;
+	display: flex;
+	font-size: 2rem;
+}
+
+.block .container .wordBlock .wordContainer {
+
+	margin: auto;
+}
+
+/*-------------*\
+	WIN BLOCK
+\*--------------*/
+
+.block .container .winBlock {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+	box-shadow: grey 0px 5px 30px 5px;
+	background-color: #fff;
+  display: none;
+}
+
+.block .container .winBlock .winContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.block .container .winBlock .winContainer p {
+  margin: auto;
+  font-size: 4rem;
+}
+
+
+
+/*-------------*\
+	LOOSE BLOCK
+\*--------------*/
+
+.block .container .looseBlock {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+	box-shadow: grey 0px 5px 30px 5px;
+	background-color: #fff;
+  display: none;
+}
+
+.block .container .looseBlock .looseContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.block .container .looseBlock .looseContainer p {
+  margin: auto;
+  font-size: 4rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hangman Game</title>
+	<link href="style.css" type="text/css" rel="stylesheet"></link>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+
+	<audio class="sonLetter" src="sounds/letter.wav"></audio>
+	<audio class="sonFail" src="sounds/sonFail.wav"></audio>
+	<audio class="sonWin" src="sounds/sonWin.wav"></audio>
+	<audio class="sonLoose" src="sounds/youLoose.wav"></audio>
+	<audio class="sonGameOver" src="sounds/gameOver.wav"></audio>
+	<audio class="sonWin" src="sounds/sonWin.wav"></audio>
+
+	<div class="block">
+		<div class="container">
+
+			<div class="newGameBlock">
+				<p class="btnNewGame"><span class="plus">+</span>&nbsp&nbsp&nbspNEW GAME</p>
+			</div>
+
+			<canvas id="canvas1" width="400" height="550"></canvas>
+
+			<div class="champTextBlock">
+				<div class="champTextBox">
+					<input id="champText" type="text" name="" maxlength="1">
+					<input id="submit" type="submit" name="" value="➔">
+				</div>
+			</div>
+
+			<div class="wordBlock">
+				<p class="wordContainer"></p>
+			</div>
+
+			<div class="winBlock">
+				<div class="winContainer">
+					<p>You Win ! </p>
+				</div>
+			</div>
+
+
+			<div class="looseBlock">
+				<div class="looseContainer">
+					<p>You Loose ! </p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
